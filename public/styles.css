@@ -1,0 +1,179 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: calc(100svw - 14px);
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100vh;
+    height: 100dvh;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;    
+    background: /* #b7c3d3 */#16161d;
+    color: #ddd;
+    font-family: system-ui;
+    text-align: center;
+}
+.header {
+    margin: 2rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ddf;
+    text-shadow: 0 0 2px #fff;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    scrollbar-color: #5fa3 #2345;
+    & .chat-screen {
+        min-width: 100%;
+        min-height: 60vh;
+        max-height: calc(100vh - 110px);
+        display: flex;
+        align-self: flex-end;
+        margin: 0px auto;
+        padding: 1rem;
+        color: #5fa;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: left;
+        font-style: italic;
+        border-radius: 5px;
+        background: #2345;
+        border: 2px solid #2345;
+        box-shadow: 0px 0px 2px #234;
+        overflow: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #5fa5 #2345;
+        transition: .4s;
+        scroll-behavior: smooth;
+
+        & ul {
+            width: 100%;
+        }
+        & .message {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin: 15px 0;
+            list-style: none;
+        }
+        & .message:last-child, .newUsserMessageLast, .newUsserMessageFirst {
+            padding-bottom: 20px;
+        }
+        & .message.bot p:first-child, .newBotMessageFirst {
+            background: #5fa3;
+            padding: 13px 0;
+            width: 50px;
+            text-align: center;
+            border: 2px solid;
+            border-radius: 25px;
+        }
+        & .bot p:last-child, .newBotMessageLast {
+            background: #2347;
+            max-width: 80%;
+            width: fit-content;
+            padding: 8px 12px;
+            align-self: start;
+            border-radius: 8px;
+        }
+        & .message.user p:first-child, .newUsserMessageFirst {
+            background: #bdf5;
+            padding: 13px 0;
+            width: 50px;
+            text-align: center;
+            border: 2px solid;
+            border-radius: 25px;
+            align-self: end;
+        }
+        & .user {
+            color: #bdf;
+            min-width: 100%;
+            /* margin-block: 5px; */
+        }
+        & .user p:last-child, .newUsserMessageLast {
+            max-width: 80%;
+            background: #2347;
+            padding: 8px 12px;
+            align-self: end;
+            border-radius: 8px;
+        }
+    }
+    & .marco {
+        width: 100%;
+        text-align: left;        
+        border: 1px solid #5fa5;
+        margin: 8px auto 16px;
+        padding-inline: 5% 5%;
+        padding-block: 0px 2px;
+        border-radius: 5px;
+        color: #5fa5;
+        font-style: italic;
+        max-width: 1200px;
+    }
+}
+footer {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 10px;
+    & form {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto;
+        gap: 10px;
+        & #user-input {
+            width: 100%;
+            max-width: 1200px;
+            font-size: 1rem;
+            font-family: system-ui;
+            padding: 7px 10px;
+            /* height: fit-content; */
+            height: 40px;
+            min-height: max-content;
+            /* max-height: 300px; */
+            border-radius: 5px;
+            border: none;
+            background: #ddf;
+            /* form-sizing: vertical; */
+            resize: none;
+            overflow-y: auto;
+        }
+        & #send-button {
+            width: 100px;
+            margin: 1px;
+            padding: 7px;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            background: #3af;
+            border-radius: 10px;
+            box-shadow: -25px 0 105px 25px #125e;
+            transition: .4s ease-out;
+
+            &:hover {
+                background: #06ba;
+                cursor: pointer;
+                transition: .2s ease-out
+            }            
+        }
+        & #send-button[disabled] {
+            background: #002;
+            cursor: not-allowed;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chat_ia con GPT</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Chat_IA</h1>
+        <h>En esta interface podrás comunicarte con el nuevo modelo GPT4o-MINI</h3>
+    </header>
+    
+    <main>
+        <section class="chat-screen">
+            <ul>
+                <li class="message bot">
+                    <p>GPT</p> 
+                    <p>Hola, soy tu asistente. ¿En qué puedo ayudarte?</p>
+                </li>
+            </ul>
+        </section>
+
+        <small class="marco">Enviando y recibiendo respuestas...</small>
+        
+    </main>
+    <footer>
+        <section id="chat-input">
+            <form>
+                <textarea type="text" id="user-input" placeholder="Escribe tu mensaje" onfocus="true"></textarea>
+                <button id="send-button">Enviar</button>
+            </form>
+        </section>
+    </footer>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
