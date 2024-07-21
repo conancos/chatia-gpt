@@ -4,9 +4,9 @@
 
 <img alt="img portada" src="./public/assets/CHAT-IA-portada.png" style="border-radius: 35px">
 
-<p style="font-size:26px; background:linear-gradient(180deg, #000 5%, #f30);-webkit-background-clip:text;color:transparent;);font-weight:bold">Chat-bot usando la API de ChatGPT</p>
+<h2 style="font-size:26px; background:linear-gradient(180deg, #000 5%, #f30);-webkit-background-clip:text;color:transparent;);font-weight:bold">Chat-bot usando la API de ChatGPT</h2>
 
-<hr style="background:#f50;height:5px;border-bottom: 5px solid #f00;border-radius:25px">
+<!--<hr style="background:#f50;height:5px;border-bottom: 5px solid #f00;border-radius:25px">-->
 
 <br>
 
@@ -33,6 +33,7 @@ $ npm start
 
 <img alt="ventana chat bot" src="./public/assets/ventana-chat-bot.png">
 
+<br>
 <br>
 
 [![Logo conancos.dev](./public/assets/logo-conancos.png)](https://conancos.dev/portfolio)
