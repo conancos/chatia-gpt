@@ -15,9 +15,11 @@
 
 - **Descargar y descomprimir ZIP.**
 
-- **Crear archivo **.env** en el directorio raiz del proyecto e introducir tu clave** [👉 API Key **↗**](https://platform.openai.com/settings/profile?tab=api-keys) &nbsp; `OPENAI_API_KEY=1234567890`
+- **Crear archivo **.env** en el directorio raíz del proyecto e introducir tu clave** [👉 API Key **↗**](https://platform.openai.com/settings/profile?tab=api-keys) &nbsp;
 
-<br>
+```javascript
+OPENAI_API_KEY=1234567890
+```
 
 - _**Instala :**_
 ```
